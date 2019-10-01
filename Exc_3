@@ -9,7 +9,7 @@ function color_sep(im)
     R = allColor[:,:,1]
     G = allColor[:,:,2]
     B = allColor[:,:,3]
-
+    println("Reset with git reset --mixed")
     return R, G, B
 
 end
