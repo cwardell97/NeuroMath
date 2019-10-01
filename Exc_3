@@ -1,0 +1,15 @@
+
+# Problem 1
+# Part A
+elCap = imread("el-capitan.png")
+
+function color_sep(im)
+    allColor = imread(im)
+    imshow(allColor)
+    R = allColor[:,:,1]
+    G = allColor[:,:,2]
+    B = allColor[:,:,3]
+
+    return R, G, B
+
+end
