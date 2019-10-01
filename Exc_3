@@ -13,3 +13,23 @@ function color_sep(im)
     return R, G, B
 
 end
+
+# Part A/e
+image2 = zeros(360, 640, 3)
+
+
+image2[:,:,1] = color_sep("el-capitan.png")[2]
+image2[:,:,2] = color_sep("el-capitan.png")[3]
+image2[:,:,3] = color_sep("el-capitan.png")[1]
+
+clf()
+subplot(1,2,1)
+title("El Capitan")
+axis("off")
+
+
+imshow(elCap)
+subplot(1,2,2)
+title("El Capitan (colors reversed)")
+axis("off")
+imshow(image2);
